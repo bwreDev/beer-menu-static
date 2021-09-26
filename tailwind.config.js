@@ -7,7 +7,7 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        'card-background': "url('/wood-backdrop.jpg')",
+        'card-background': "url('/light-wood-background.jpg')",
       },
     },
   },
