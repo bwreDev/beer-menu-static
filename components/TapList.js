@@ -111,13 +111,13 @@ const taps = [
   },
   {
     key: 15,
-    brand: 'Topa Topa',
+    brand: 'New Belgium Brewing',
     type: 'Hazy IPA',
-    name: 'South Bound (Limited Release)',
-    location: 'Ventura, CA',
-    abv: '6.7% | IBU - 55',
+    name: 'Juicy Haze',
+    location: 'Ft. Collins, CO',
+    abv: '7.5% | IBU - 43',
     imageUrl:
-      'https://cdn.shopify.com/s/files/1/0278/5506/1057/products/TopaTopa_600x.png?v=1590632731',
+      'https://www.newbelgium.com/siteassets/header/nbb-logo.png',
   },
   {
     key: 14,
@@ -151,13 +151,13 @@ const taps = [
   },
   {
     key: 11,
-    brand: 'Firestone Walker - Barrelworks',
-    type: 'Sour / Wild Ale',
-    name: 'Nec Bones (Limited Release)',
-    location: 'Buellton, CA',
-    abv: '5.7%',
+    brand: 'New selection coming soon!',
+    type: '',
+    name: '',
+    location: '',
+    abv: '',
     imageUrl:
-      'https://untappd.akamaized.net/site/beer_logos/beer-1758716_b17a8_sm.jpeg',
+      'https://media.istockphoto.com/vectors/square-grunge-red-coming-soon-stamp-vector-id846303124?s=612x612',
   },
   {
     key: 10,
