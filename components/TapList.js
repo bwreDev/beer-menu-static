@@ -21,13 +21,13 @@ const taps = [
   },
   {
     key: 24,
-    brand: 'Barrelhouse Brewing Company',
-    type: 'Hard Seltzer',
-    name: 'Tropical Teaki (Limited Release)',
-    location: 'Paso Robles, CA',
-    abv: '4.5% | IBU - 1',
+    brand: 'Belching Beaver Brewery',
+    type: 'Blonde Ale',
+    name: 'Must Be the Honey',
+    location: 'San Diego, CA',
+    abv: '5.5% | IBU - 19',
     imageUrl:
-      'https://images.squarespace-cdn.com/content/v1/5547ae67e4b0b68214c99c69/1467402023817-Z4SXHSL9QYCJXKO5JO93/BHBC_Logo_Basic-white.png?format=1500w',
+      'https://static.spotapps.co/web/belchingbeaver--com/custom/logo_left.png',
   },
   {
     key: 23,
@@ -41,13 +41,13 @@ const taps = [
   },
   {
     key: 22,
-    brand: 'Liquid Gravity Brewing Company',
-    type: 'Wheat Ale',
-    name: 'Blackberry Wheat Ale (Limited Release)',
-    location: 'San Luis Obispo, CA',
-    abv: '5.7% | IBU - 20',
+    brand: 'Samuel Adams',
+    type: 'Seasonal Lager',
+    name: 'Octoberfest 2021 (Limited Release)',
+    location: 'Boston, MA',
+    abv: '6.0% | IBU - 28',
     imageUrl:
-      'https://images.squarespace-cdn.com/content/v1/5d4cce8d082420000107efee/1612463004796-Y5S16QB8IZ7U2CEDVKRL/LG+LOGOS+green-06.png?format=1000w',
+      'https://untappd.akamaized.net/site/beer_logos/beer-3942_8134d_sm.jpeg',
   },
   {
     key: 21,
@@ -91,11 +91,11 @@ const taps = [
   },
   {
     key: 17,
-    brand: 'Central Coast Brewing',
-    type: 'Hazy IPA',
-    name: 'Juice Box Hero (Limited Release)',
-    location: 'San Luis Obispo, CA',
-    abv: '7.0% | IBU - 50',
+    brand: 'Central Coast Brewing & River City (Collaboration)',
+    type: 'Hazy Pale Ale',
+    name: 'Friend Zone',
+    location: 'San Luis Obispo, CA | Sacramento, CA',
+    abv: '5.4% | IBU - 35',
     imageUrl:
       'http://images.squarespace-cdn.com/content/v1/55b6c2d9e4b0e7b01e39f348/1451513448676-LO1GRWJL1BU9HJZO1A14/ccb_main_logo.png?format=1500w',
   },
@@ -161,13 +161,13 @@ const taps = [
   },
   {
     key: 10,
-    brand: 'Elysian Brewing',
-    type: 'Watermelon Gose Sour',
-    name: 'Salt & Seed (Limited Release)',
-    location: 'Seattle, WA',
-    abv: '4.0% | IBU - 10',
+    brand: 'Firestone Walker',
+    type: 'XVII 2013 Anniversary Ale',
+    name: 'Strong Ale (Limited Release)',
+    location: 'Buellton, CA',
+    abv: '13.3% | IBU - 30',
     imageUrl:
-      'https://i2.wp.com/schottdistributing.com/wp-content/uploads/2018/11/elysian-logo.png?resize=300%2C300&ssl=1',
+      'https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/FWBC_Logo.png/220px-FWBC_Logo.png',
   },
   {
     key: 9,
