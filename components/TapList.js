@@ -11,13 +11,13 @@ const taps = [
   },
   {
     key: 25,
-    brand: 'Barrelhouse Brewing Company',
-    type: 'Blonde Ale',
-    name: 'Strawberry Daze',
-    location: 'Paso Robles, CA',
-    abv: '5.0% | IBU - 10',
+    brand: 'Third Window',
+    type: 'Belgian White',
+    name: 'Merci, Pierre',
+    location: 'Santa Barbara, CA',
+    abv: '4.8% | IBU - 15',
     imageUrl:
-      'https://images.squarespace-cdn.com/content/v1/5547ae67e4b0b68214c99c69/1467402023817-Z4SXHSL9QYCJXKO5JO93/BHBC_Logo_Basic-white.png?format=1500w',
+      'https://sbbeerfestival.com/wp-content/uploads/2016/10/third-window-logo.jpg',
   },
   {
     key: 24,
@@ -279,7 +279,7 @@ export default function TapList() {
         {taps.map((tap) => (
           <li
             key={tap.key}
-            className='col-span-1 flex flex-col text-center bg-card-background bg-cover rounded-lg shadow divide-y divide-gray-200'>
+            className='col-span-1 flex flex-col text-center bg-card-background bg-cover rounded-lg shadow-lg divide-y divide-gray-200'>
             <div className='flex-1 flex flex-col p-8 bg-black bg-opacity-25'>
               <img
                 className='flex-shrink-0 mx-auto'
