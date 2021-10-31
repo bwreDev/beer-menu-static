@@ -1,7 +1,6 @@
 import Copyright from '../components/Copyright';
 import TapList from '../components/TapList';
 import Head from 'next/head';
-require('dotenv').config();
 
 export default function Home({ taps }) {
   return (
@@ -34,7 +33,7 @@ export default function Home({ taps }) {
 }
 
 export async function getStaticProps() {
-  const apiKey = process.env.API_KEY;
+  const apiKey = process.env.NEXT_PUBLIC_API_KEY;
   const settings = {
     headers: {
       Authorization: `Basic ${apiKey}`,
