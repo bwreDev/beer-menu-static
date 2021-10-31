@@ -33,15 +33,13 @@ export default function Home({ taps }) {
 }
 
 export async function getStaticProps() {
-  const apiKey = process.env.API_KEY;
-  const rotTaplist = process.env.ROTATING_TAPLIST;
   const settings = {
     headers: {
-      Authorization: `Basic ${apiKey}`,
+      Authorization: `Basic Y29sdG9uQGNjLXJnLmNvbTo2cXo1WFIta3h4LTRQN2J6c3FWag==}`,
     },
   };
   const res = await fetch(
-    `https://business.untappd.com/api/v1/sections/${rotTaplist}/items`,
+    `https://business.untappd.com/api/v1/sections/669648/items`,
     settings
   );
   const taps = await res.json();
