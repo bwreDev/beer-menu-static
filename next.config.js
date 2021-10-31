@@ -1,4 +1,6 @@
 module.exports = {
-  images: {},
+  images: {
+    domains: ['beer.untappd.com'],
+  },
   reactStrictMode: true,
 };
