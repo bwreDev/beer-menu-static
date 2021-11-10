@@ -1,5 +1,3 @@
-import { XIcon } from '@heroicons/react/outline';
-
 export default function Banner() {
 	return (
 		<div className='relative bg-red-700'>
