@@ -1,7 +1,6 @@
 import Copyright from '../components/Copyright';
 import TapList from '../components/TapList';
 import Head from 'next/head';
-import Banner from '../components/Banner';
 
 export default function Home({ taps }) {
 	return (
@@ -27,14 +26,13 @@ export default function Home({ taps }) {
 				/>
 				<link rel='manifest' href='/site.webmanifest' />
 			</Head>
-			<Banner />
 			<TapList taps={taps} />
 			<Copyright />
 		</>
 	);
 }
 
-export async function getServerSideProps() {
+export async function getStaticProps() {
 	const apiKey = process.env.NEXT_PUBLIC_API_KEY;
 	const settings = {
 		headers: {
