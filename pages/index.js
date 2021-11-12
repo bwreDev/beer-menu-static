@@ -34,7 +34,7 @@ export default function Home({ taps }) {
 	);
 }
 
-export async function getStaticProps() {
+export async function getServerSideProps() {
 	const apiKey = process.env.NEXT_PUBLIC_API_KEY;
 	const settings = {
 		headers: {
