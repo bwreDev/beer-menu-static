@@ -3,7 +3,7 @@ import TapList from '../components/TapList';
 import Head from 'next/head';
 import Banner from '../components/Banner';
 
-export default function Home({ taps }) {
+export default function Home() {
 	return (
 		<>
 			<Head>
@@ -28,28 +28,8 @@ export default function Home({ taps }) {
 				<link rel='manifest' href='/site.webmanifest' />
 			</Head>
 			<Banner />
-			<TapList taps={taps} />
+			<TapList />
 			<Copyright />
 		</>
 	);
-}
-
-export async function getStaticProps(context) {
-	const apiKey = process.env.NEXT_PUBLIC_API_KEY;
-	const settings = {
-		headers: {
-			Authorization: `Basic ${apiKey}`,
-		},
-	};
-	const res = await fetch(
-		`https://business.untappd.com/api/v1/sections/669648/items`,
-		settings
-	);
-	const taps = await res.json();
-
-	return {
-		props: {
-			taps,
-		},
-	};
 }

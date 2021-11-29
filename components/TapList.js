@@ -1,4 +1,24 @@
-export default function TapList({ taps }) {
+import { useEffect, useState } from 'react';
+const url = `https://business.untappd.com/api/v1/sections/669648/items`;
+const apiKey = process.env.NEXT_PUBLIC_API_KEY;
+const settings = {
+	headers: {
+		Authorization: `Basic ${apiKey}`,
+	},
+};
+
+export default function TapList() {
+	const [taps, setTaps] = useState([]);
+
+	useEffect(() => {
+		const fetchData = async () => {
+			const res = await fetch(url, settings);
+			const taps = await res.json();
+			setTaps(taps.items);
+		};
+		fetchData();
+	}, [setTaps]);
+
 	return (
 		<div className='bg-gray-100 p-2'>
 			<div className='max-w-7xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:px-8'>
@@ -14,7 +34,7 @@ export default function TapList({ taps }) {
 			<ul
 				role='list'
 				className='grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4'>
-				{taps.items.map((tap) => (
+				{taps.map((tap) => (
 					<li
 						key={tap.id}
 						className='col-span-1 flex flex-col text-center bg-card-background bg-cover rounded-lg shadow-lg divide-y divide-gray-200'>
