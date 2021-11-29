@@ -8,7 +8,7 @@ export default function Banner() {
 							We are verified on Untappd!
 						</span>
 						<span className='hidden md:inline'>
-							Big news! We're excited to announce that we are now
+							Big news! We&apos;re excited to announce that we are now
 							verified on Untappd!
 						</span>
 						<span className='block sm:ml-2 sm:inline-block'>
