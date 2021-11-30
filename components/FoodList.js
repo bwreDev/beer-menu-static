@@ -1,23 +1,24 @@
 import { useEffect, useState } from 'react';
 const apiKey = process.env.NEXT_PUBLIC_API_KEY;
-const url = `https://business.untappd.com/api/v1/sections/669648/items`;
+const appsUrl = `https://business.untappd.com/api/v1/custom_sections/175523/custom_items`;
 const settings = {
 	headers: {
 		Authorization: `Basic ${apiKey}`,
 	},
 };
 
-export default function TapList() {
-	const [taps, setTaps] = useState([]);
+export default function FoodList() {
+	const [apps, setApps] = useState([]);
 
 	useEffect(() => {
 		const fetchData = async () => {
-			const res = await fetch(url, settings);
-			const taps = await res.json();
-			setTaps(taps.items);
+			const res = await fetch(appsUrl, settings);
+			const apps = await res.json();
+			console.log(apps);
+			setApps(apps);
 		};
 		fetchData();
-	}, [setTaps]);
+	}, [setApps]);
 
 	return (
 		<div className='bg-gray-100 p-2'>
@@ -34,39 +35,33 @@ export default function TapList() {
 			<ul
 				role='list'
 				className='grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4'>
-				{taps.map((tap) => (
+				{apps.map((app) => (
 					<li
-						key={tap.id}
+						key={app.id}
 						className='col-span-1 flex flex-col text-center bg-card-background bg-cover rounded-lg shadow-lg divide-y divide-gray-200'>
 						<div className='flex-1 flex flex-col p-8 bg-black bg-opacity-25'>
-							<img
-								className='max-h-40 flex-shrink-0 mx-auto'
-								src={tap.label_image_hd}
-								alt={tap.brewery}
-							/>
-
 							<h3 className='mt-6 text-gray-200 bg-gray-800 bg-opacity-75 rounded-full text-lg font-medium'>
-								{tap.brewery}
+								{}
 							</h3>
 							<dl className='mt-1 flex-grow flex flex-col justify-between'>
 								<dt className='sr-only'>Brand</dt>
 								<dd className='text-gray-200 bg-gray-800 bg-opacity-75 rounded-full'>
-									{tap.name}
+									{app.name}
 								</dd>
 								<dt className='sr-only'>Location</dt>
 								<dd className='mt-3'>
 									<span className='px-2 py-1 text-green-800 text-xs font-medium bg-green-100 rounded-full'>
-										{tap.brewery_location}
+										{}
 									</span>
 								</dd>
 								<dd className='mt-3'>
 									<span className='px-2 py-1 text-yellow-800 text-xs font-medium bg-yellow-100 rounded-full'>
-										{tap.style}
+										{}
 									</span>
 								</dd>
 								<dd className='mt-3'>
 									<span className='px-2 py-1 text-red-800 text-xs font-medium bg-red-100 rounded-full'>
-										ABV - {tap.abv} | IBU - {tap.ibu}
+										ABV - {} | IBU - {}
 									</span>
 								</dd>
 							</dl>
