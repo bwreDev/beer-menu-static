@@ -20,54 +20,53 @@ export default function TapList() {
 	}, [setTaps]);
 
 	return (
-		<div className='bg-gray-100 p-2'>
-			<div className='max-w-7xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:px-8'>
+		<div className='bg-gray-100 p-4'>
+			<div className='max-w-7xl mx-auto py-8 px-6 sm:py-16 sm:px-8 lg:px-10'>
 				<div className='text-center'>
-					<p className='mt-1 text-4xl font-extrabold text-gray-900 sm:text-5xl sm:tracking-tight lg:text-6xl'>
+					<h1 className='mt-1 text-2xl font-extrabold text-gray-900 sm:text-4xl sm:tracking-tight lg:text-6xl'>
 						Rotating Self-Serve Guest Taps
-					</p>
-					<p className='max-w-xl mt-5 mx-auto text-xl text-gray-500'>
+					</h1>
+					<p className='max-w-xl mt-5 mx-auto text-lg text-gray-600'>
 						Self-serve by the ounce
 					</p>
 				</div>
 			</div>
 			<ul
 				role='list'
-				className='grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4'>
+				className='grid grid-cols-1 gap-4 md:gap-6 lg:gap-8 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-4'>
 				{taps.map((tap) => (
 					<li
 						key={tap.id}
 						className='col-span-1 flex flex-col text-center bg-card-background bg-cover rounded-lg shadow-lg divide-y divide-gray-200'>
-						<div className='flex-1 flex flex-col p-8 bg-black bg-opacity-25'>
+						<div className='flex-1 flex flex-col p-8 rounded-lg bg-black bg-opacity-25'>
 							<img
-								className='max-h-40 flex-shrink-0 mx-auto'
+								className='max-h-28 md:max-h-32 lg:max-h-36 flex-shrink-0 mx-auto'
 								src={tap.label_image_hd}
 								alt={tap.brewery}
 							/>
-
-							<h3 className='mt-6 text-gray-200 bg-gray-800 bg-opacity-75 rounded-full text-lg font-medium'>
+							<h3 className='mt-6 p-1 text-gray-200 bg-gray-800 bg-opacity-90 border-2 border-gray-200 rounded-md text-md md:text-lg font-medium'>
 								{tap.brewery}
 							</h3>
-							<dl className='mt-1 flex-grow flex flex-col justify-between'>
+							<dl className='mt-2 flex-grow flex flex-col justify-between'>
 								<dt className='sr-only'>Brand</dt>
-								<dd className='text-gray-200 bg-gray-800 bg-opacity-75 rounded-full'>
+								<dd className='text-gray-200 bg-gray-800 bg-opacity-90 rounded-md border-2 border-gray-200'>
 									{tap.name}
 								</dd>
 								<dt className='sr-only'>Location</dt>
 								<dd className='mt-3'>
-									<span className='px-2 py-1 text-green-800 text-xs font-medium bg-green-100 rounded-full'>
+									<p className='px-2 py-1 text-green-900 text-xs font-medium bg-green-100 rounded-md border border-green-900'>
 										{tap.brewery_location}
-									</span>
+									</p>
 								</dd>
 								<dd className='mt-3'>
-									<span className='px-2 py-1 text-yellow-800 text-xs font-medium bg-yellow-100 rounded-full'>
+									<p className='px-2 py-1 text-yellow-900 text-xs font-medium bg-yellow-100 rounded-md border border-yellow-900'>
 										{tap.style}
-									</span>
+									</p>
 								</dd>
 								<dd className='mt-3'>
-									<span className='px-2 py-1 text-red-800 text-xs font-medium bg-red-100 rounded-full'>
+									<p className='px-2 py-1 text-red-900 text-xs font-medium bg-red-100 rounded-md border border-red-900'>
 										ABV - {tap.abv} | IBU - {tap.ibu}
-									</span>
+									</p>
 								</dd>
 							</dl>
 						</div>
