@@ -20,13 +20,13 @@ export default function TapList() {
 	}, [setTaps]);
 
 	return (
-		<div className='bg-gray-100 p-4'>
+		<div className='bg-gray-900 p-4'>
 			<div className='max-w-7xl mx-auto py-8 px-6 sm:py-16 sm:px-8 lg:px-10'>
 				<div className='text-center'>
-					<h1 className='mt-1 text-2xl font-extrabold text-gray-900 sm:text-4xl sm:tracking-tight lg:text-6xl'>
+					<h1 className='mt-1 text-2xl font-extrabold text-gray-100 sm:text-4xl sm:tracking-tight lg:text-6xl'>
 						Rotating Self-Serve Guest Taps
 					</h1>
-					<p className='max-w-xl mt-5 mx-auto text-lg text-gray-600'>
+					<p className='max-w-xl mt-5 mx-auto text-lg text-gray-400'>
 						Self-serve by the ounce
 					</p>
 				</div>
