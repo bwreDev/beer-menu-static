@@ -2,6 +2,7 @@ import Copyright from '../components/Copyright';
 import TapList from '../components/TapList';
 import Head from 'next/head';
 import Banner from '../components/Banner';
+import Nav from '../components/Nav';
 
 export default function Home() {
 	return (
@@ -28,6 +29,7 @@ export default function Home() {
 				<link rel='manifest' href='/site.webmanifest' />
 			</Head>
 			<Banner />
+			<Nav />
 			<TapList />
 			<Copyright />
 		</>
