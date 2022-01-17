@@ -9,7 +9,7 @@ export default function Nav() {
 			<nav
 				className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'
 				aria-label='Top'>
-				<div className='py-4 flex flex-wrap justify-center space-x-6 lg:hidden'>
+				<div className='py-4 flex flex-wrap justify-center space-x-6'>
 					{navigation.map((link) => (
 						<a
 							key={link.name}
